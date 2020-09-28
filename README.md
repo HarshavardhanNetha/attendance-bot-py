@@ -7,7 +7,11 @@ Make sure python is installed added it's PATH is added in environment variables.
 
 Run this command in cmd: pip install slelenium (downloads module named selenium to perform this automation.)
 
+![image](https://user-images.githubusercontent.com/25225208/94424551-04b47180-01a8-11eb-8851-a28d0af381e3.png)
+
 Replace the inputs at the end in new_bot.py with your original values.
+
+![image](https://user-images.githubusercontent.com/25225208/94424741-5957ec80-01a8-11eb-83d8-4a18043d75ea.png)
 
 Note: You need Chrome installed on laptop in order to run it.
 
