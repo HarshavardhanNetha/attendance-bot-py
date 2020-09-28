@@ -36,7 +36,7 @@ def insta(user_id,pwd,sub_code):
 
 user = "ID" #replace "ID" with your ID number
 pwd = "Password" #replace "Password" with your password
-sub_code = "HS" #replace "Subject Code" with code of subject that you see in dashborad for which you would like to submit attendance
+sub_code = "Subject Code" #replace "Subject Code" with code of subject that you see in dashborad for which you would like to submit attendance
 
 #remove below comments to make it interactive bot
 #user = input("Enter your ID:")
