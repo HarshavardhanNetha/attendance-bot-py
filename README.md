@@ -19,4 +19,4 @@ You can use firefox even. Just replace Chrome with Firefox in new_bot.py file.
 
 Happy hacking!
 
-Feel free to reach at linkedin.com/in/harsha-netha for any queries.
+Feel free to reach at https://linkedin.com/in/harsha-netha for any queries.
