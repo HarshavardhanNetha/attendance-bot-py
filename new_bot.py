@@ -57,12 +57,17 @@ def moodle(sub_code):
 
 user = "ID" #replace "ID" with your ID number
 pwd = "Password" #replace "Password" with your password
+<<<<<<< HEAD
+=======
+sub_code = "Subject Code" #replace "Subject Code" with code of subject that you see in dashborad for which you would like to submit attendance
+>>>>>>> fcedde91db221463504b5052fd51ed737f02ea29
 
 #remove below comments to make it interactive bot
 
 #user = input("Enter your ID:")
 #pwd = getpass.getpass(prompt="Enter your password:",stream=None)
 
+<<<<<<< HEAD
 choice=int(input("1. Automatic\t2. Manual:"))
 
 if(choice==2):
@@ -93,3 +98,6 @@ elif(choice==1):
     driver.execute_script("alert('Thank you for using. With ♡ @harsha :)');")
     sleep(2)
     driver.quit()
+=======
+insta(user,pwd,sub_code)
+>>>>>>> fcedde91db221463504b5052fd51ed737f02ea29
