@@ -22,7 +22,7 @@ def login(user_id,pwd):
 def moodle(sub_code):
     #simulate subject search and click
     sub_find = driver.find_elements_by_xpath("//span[contains(text(), '{}')]".format(sub_code))
-    if(len(sub_find)!=0):
+    if(0): #unsued block
         sub_find[0].click()
         sleep(1)
     else:
@@ -89,8 +89,9 @@ elif(choice==1):
         sub_code=codes[i]
         try:
             moodle(sub_code)
+            driver.find_element_by_xpath("//a[contains(text(), 'Dashboard')]").click()
         except:
-            driver.find_element_by_xpath("//span[contains(text(), 'Dashboard')]").click()
+            pass
     driver.execute_script("alert('Thank you for using. With ♡ @harsha :)');")
     sleep(2)
     driver.quit()
