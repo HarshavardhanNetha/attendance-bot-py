@@ -67,7 +67,12 @@ pwd = "Password" #replace "Password" with your password
 choice=int(input("1. Automatic\t2. Manual:"))
 
 if(choice==2):
-    sub = input("Enter subject code to submit attendance:").upper()
+    while(1):
+        sub = input("Enter subject code to submit attendance:").upper()
+        if(sub in codes.keys()):
+            break
+        else:
+            print("Enter correct value")
     driver=webdriver.Chrome()
     login(user,pwd)
     sub_code=codes[sub]
