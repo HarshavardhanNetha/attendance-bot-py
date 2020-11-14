@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 #make sure codes have only subjects for which attendance is enabled
 codes={"PS":'PS','AEC':'EC2105','DEC':'EC2101','HS':'HS2101',"DM":"CS2102"} #replace them with your Sub. codes. Make sure keys must be uppercase
 flag=0
-
+driver_path = '/root/attendance-bot-py/chromedriver'
 def login(user_id,pwd):
     driver.get("http://lms.rgukt.ac.in/login/index.php")
     sleep(0.5)
@@ -73,7 +73,7 @@ if(choice==2):
             break
         else:
             print("Enter correct value")
-    driver=webdriver.Chrome()
+    driver=webdriver.Chrome(executable_path = driver_path)
     login(user,pwd)
     sub_code=codes[sub]
     moodle(sub_code)
@@ -83,12 +83,12 @@ if(choice==2):
         Keys.ENTER
         driver.quit()
     else:
-        driver.execute_script("alert('Thank you for using. With ♡ @harsha :)');")
+        driver.execute_script("alert('Thank you for using. With @harsha :)');")
         sleep(2)
         driver.quit()
 
 elif(choice==1):
-    driver=webdriver.Chrome()
+    driver=webdriver.Chrome(executable_path = driver_path)
     login(user,pwd)
     for i in codes.keys():
         sub_code=codes[i]
@@ -97,6 +97,6 @@ elif(choice==1):
             driver.find_element_by_xpath("//a[contains(text(), 'Dashboard')]").click()
         except:
             pass
-    driver.execute_script("alert('Thank you for using. With ♡ @harsha :)');")
+    driver.execute_script("alert('Thank you for using. With  @harsha :)');")
     sleep(2)
     driver.quit()
