@@ -20,3 +20,11 @@ You can use firefox even. Just replace Chrome with Firefox in new_bot.py file.
 Happy hacking!
 
 Feel free to reach at https://linkedin.com/in/harsha-netha for any queries.
+
+## Update: Fullt Automatic Moodle Bot
+
+I've used cloud computing wherein I managed to run this script 24/7 once in an hour to check my profile for any attendance that I've pending to submit.
+
+![image](https://user-images.githubusercontent.com/25225208/99821256-d20b7180-2b77-11eb-8e16-7694d07655c2.png)
+
+It also generates log files to check result of program at any time.
