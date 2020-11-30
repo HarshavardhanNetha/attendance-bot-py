@@ -35,10 +35,15 @@ def moodle(sub_code):
         sub_find[0].click()
         sleep(1)
     else:
-        driver.find_element_by_xpath("//a[@title=\"{}\"]".format(sub_code)).click()
+        sub_ele=driver.find_element_by_xpath("//a[@title=\"{}\"]".format(sub_code))
+        driver.execute_script("window.scrollBy(0,100)")
+        sub_ele=.click()
         sleep(1)
         
-    driver.find_element_by_xpath("//span[contains(text(), 'Attendance')]").click()
+		    
+	ele_attnd=driver.find_element_by_xpath("//span[contains(text(), 'Attendance')]")
+	driver.execute_script("window.scrollBy(0,100)")
+	ele_attnd.click()
     sleep(1)
 
     temp=0 #variable to check status
@@ -52,6 +57,7 @@ def moodle(sub_code):
         flag=1
         
     else:
+		driver.execute_script("window.scrollBy(0,100)")
         check_time[0].click()
         sleep(1)
         a=driver.find_element_by_xpath("//input[@name=\"status\"]").click()
